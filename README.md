@@ -29,6 +29,8 @@ Installation
     
 Running
 -------
+本程序每次提交时，按版本号提交整个新文件夹，执行时下载最新版本号文件夹即可。
+
 直接运行主文件tencent-weibo.py即可
 
     $ python tencent-weibo.py
