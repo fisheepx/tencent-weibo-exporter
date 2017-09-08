@@ -42,21 +42,21 @@ Running
 
 Code
 ----
-1，如何指定备份的开始和结束页？
+1,如何修改为自己的微博ID？
+
+version14 之前 在文件 tencent_weibo.py 最下方位置将 renminwangcom 替换为自己的微博ID即可。
+
+2，如何指定备份的开始和结束页？
 
 version8 之前在 *start()* 方法的 *while* 循环内通过注释 *test code* 部分实现。
 
 version8 开始通过修改在类最开始的 *START_PAGE_INDEX* 和 *END_PAGE_INDEX* 两个常量实现。
 
-2，如果修改多少页保存成一个文件？
+3，如果修改多少页保存成一个文件？
 
 从 version14 开始，通修改在类最开始的 *SAVE_FILE_PAGE* 常量实现。
 
 *※此处所说的“页”为腾讯微博的页数，并非Word文件的页数。*
-
-3,老版本如何修改微博ID？
-
-version14 之前 在文件 tencent_weibo.py 最下方位置将 renminwangcom 替换为自己的微博ID即可。
 
 4,为什么最多只能备份100页的微博？
 
