@@ -2,7 +2,7 @@ tencent-weibo-exporter
 ======================
 腾讯微博导出工具，无需登录，执行时输入自己的微博ID即可将微博导出到Word文件，格式为docx.
 
-:triangular_flag_on_post:※2017年9月15日：更新登录备份版本代码，以对应不登录时100页以后无法备份的情况。
+:triangular_flag_on_post:※2017年9月15日：更新[登录备份版本](#triangular_flag_on_postlogin-versiontriangular_flag_on_post)代码，以对应不登录时100页以后无法备份的情况。
 
 ![image](https://github.com/coolcooldool/tencent-weibo-exporter/blob/master/images/logo.jpg)
 
