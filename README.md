@@ -69,6 +69,34 @@ version8 开始通过修改在类最开始的 *START_PAGE_INDEX* 和 *END_PAGE_I
 
 :triangular_flag_on_post:Login Version:triangular_flag_on_post:
 ---------
+#### 1，为什么还要编写一个登录版的代码？
+
+由于上方所说，不登录时只能备份前100页，而且这时的100页每页显示长度比较少，本人微博登录后总页数66页，而不登录时100页的内容才相当于登录后的52页左右。
+
+#### 2，登录版本的代码运行时有什么要求？
+
+##### (1)请安装FireFox浏览器
+
+因为代码使用Chrome浏览器测试时发生了无法响应事件的问题，所以使用FireFox浏览器。[下载地址](https://www.mozilla.org/)
+
+##### (2)下载FireFox浏览器的调试驱动程序并将其配置到环境变量
+
+由于代码基于*python selenium*实现，需要浏览器的调试驱动程序。请下载驱动程序文件并将其配置到环境变量中。[下载地址](https://github.com/mozilla/geckodriver/releases)
+※.将下载得到的*geckodriver.exe*文件直接放去Python安装目录即可。(例如Windows：C:\Program Files\Python27)
+
+##### (3)QQ必须牌登录状态并且网页快捷登录可用
+
+由于在网页上通过账号和密码登录QQ的代码实现方式十分困难，并且考虑到安全性，于是程序采用快捷登录的方式进行登录，所以QQ必须要处于在线状态，并且允许使用QQ快捷登录的方式登录网页。即下图所示状态可用。
+![image](https://github.com/coolcooldool/tencent-weibo-exporter/blob/master/images/login.jpg)
+
+##### (4)将微博翻页状态切换为“页码翻页”语言切换为“简体中文”
+
+由于备份时需要通过模拟点击下一页进行翻页，所以需要切换为页码翻页；并且查找的文字为*下一页*，所以需要简体中文显示。如果页面不是页码翻页，而是在页面最下方显示为“更多”时，通过拖拽浏览器的滚动条到页面最下方的方法，即可以页面最下方显示“试试页码翻页”链接。如下图处示。
+![image](https://github.com/coolcooldool/tencent-weibo-exporter/blob/master/images/footer.png)
+
+#### 3，我的QQ号和密码有没有泄露的风险？
+
+完全没有！如上所述，虽然是登录版，但代码中并没有利用账号和密码的方式进行登录，所以完全没有风险。
 
 Change Log
 ----------
