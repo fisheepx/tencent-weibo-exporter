@@ -2,7 +2,7 @@ tencent-weibo-exporter
 ======================
 腾讯微博导出工具，无需登录，执行时输入自己的微博ID即可将微博导出到Word文件，格式为docx.
 
-:triangular_flag_on_post:※2017年9月15日：更新[登录备份版本](#Login Version)代码，以对应不登录时100页以后无法备份的情况。
+:triangular_flag_on_post:※2017年9月15日：更新[登录备份版本](#Login%20Version)代码，以对应不登录时100页以后无法备份的情况。
 
 ![image](https://github.com/coolcooldool/tencent-weibo-exporter/blob/master/images/logo.jpg)
 
@@ -69,8 +69,8 @@ version8 开始通过修改在类最开始的 *START_PAGE_INDEX* 和 *END_PAGE_I
 单独留下每个版本的代码文件夹，是为了记录一下每个版本的改进，也为了如果有人想通过本程序学习Python更方便。除各别版本生成文件会出错外，其它版均可正常生成文件。（目前已知version13出现异常，version14修复。）
 代码非常简单（其实是过于简单:joy:），只是一点点的找到正规表达式的过程。发现不好的地方欢迎指正 :two_men_holding_hands: 代码会不定期更新。
 
-:triangular_flag_on_post:Login Version:triangular_flag_on_post:
----------
+Login Version
+-------------
 #### 1，为什么还要编写一个登录版的代码？
 
 由于上方所说，不登录时只能备份前100页，而且这时的100页每页显示长度比较少，本人微博登录后总页数66页，而不登录时100页的内容才相当于登录后的52页左右。
