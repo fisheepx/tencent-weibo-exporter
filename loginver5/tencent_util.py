@@ -218,18 +218,17 @@ def add_quotation(document, quotation):
             print '转帖插入图片出错：' + filename
     # add video   
     video_items = analyze_video_html(quotation)
-    if not video_items:
-        return
-    run_video = para.add_run()
-    font_video = run_video.font
-    font_video.size = Pt(8)
-    font_video.color.rgb = RGBColor(0x7A, 0x7A, 0x7A)
-    docx_ext.add_hyperlink(para, video_items[0], video_items[1], '4169E1', False)
-    para.add_run('\n')
-    try:
-        run_pic.add_picture(video_items[3], width=Inches(3))
-    except:
-        print '视频封面插入出错：' + video_items[3]
+    if video_items:
+        run_video = para.add_run()
+        font_video = run_video.font
+        font_video.size = Pt(8)
+        font_video.color.rgb = RGBColor(0x7A, 0x7A, 0x7A)
+        docx_ext.add_hyperlink(para, video_items[0], video_items[1], '4169E1', False)
+        para.add_run('\n')
+        try:
+            run_pic.add_picture(video_items[3], width=Inches(3))
+        except:
+            print '视频封面插入出错：' + video_items[3]
     # add time
     run_time = para.add_run(quotation_items[2])
     font_time = run_time.font
