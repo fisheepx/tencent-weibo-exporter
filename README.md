@@ -17,6 +17,14 @@ tencent-weibo-exporter
     示例中使用的人民网的账号是上传代码时候临时抓的。
     本来想找个明星账号的，一来是腾讯微博明星本来就少，二来实在是没有太喜欢的明星。
 
+备份文件效果
+
+![image](https://github.com/coolcooldool/tencent-weibo-exporter/blob/master/images/content1.png)
+
+![image](https://github.com/coolcooldool/tencent-weibo-exporter/blob/master/images/content2.png)
+
+位置信息，视频，URL链接均可以点击打开相应网页，使用谷歌地图。
+
 Requirements
 ------------
 Python 2.7
