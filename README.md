@@ -45,8 +45,9 @@ Running
 
 直接运行主文件tencent-weibo.py即可
 
-    $ python tencent-weibo.py
+ ~~$ python tencent-weibo.py~~
 
+:exclamation::exclamation::exclamation:请使用 [PyCharm](https://www.jetbrains.com/pycharm/), [Eclipse(安装Python插件)](https://www.eclipse.org/downloads/)等IDE执行，如果直接使用Windows控制台执行则会出现中文乱码问题，参见[issues1](https://github.com/coolcooldool/tencent-weibo-exporter/issues/1)
 
 运行后会在当前目录下生成Word文件，在当前目录下的 pic 文件夹下下载微博内的图片。目前每20页生成一个Word文件，可以代码内自行修改。
 
