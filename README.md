@@ -27,27 +27,38 @@ tencent-weibo-exporter
 
 Requirements
 ------------
-Python 2.7
+Python 2.x(version14以前)
+
+Python 3.x(version15开始)
 
 Installation
 ------------
 由于需要导出Word文件，所以需要Python的docx支持，安装时请使用 [pip](http://www.pip-installer.org/)
 
-    $ pip install docx
-    
+Version15开始请使用以下命令：
+
+    $ pip install --pre python-docx
+
+Version14以前请使用以下命令：
+
+    $ pip install docx
+
 或者 [easy_install](http://peak.telecommunity.com/DevCenter/EasyInstall)
 
     $ easy_install docx
-    
+
 Running
 -------
 本程序每次提交时，按版本号提交整个新文件夹，执行时下载最新版本号文件夹即可。
 
-直接运行主文件tencent-weibo.py即可
+Version15及以后的版本直接运行主文件tencent-weibo.py即可
 
- ~~$ python tencent-weibo.py~~
+    $ python tencent_weibo.py
 
-:exclamation::exclamation::exclamation:请使用 [PyCharm](https://www.jetbrains.com/pycharm/), [Eclipse(安装Python插件)](https://www.eclipse.org/downloads/)等IDE执行，如果直接使用Windows控制台执行则会出现中文乱码问题，参见[issues1](https://github.com/coolcooldool/tencent-weibo-exporter/issues/1)
+:exclamation::exclamation::exclamation:Version14之前请使用 [PyCharm](https://www.jetbrains.com/pycharm/), [Eclipse(安装Python插件)](https://www.eclipse.org/downloads/)等IDE执行*tencent-weibo.py*，如果直接使用Windows控制台执行则会出现中文乱码问题，参见[issues1](https://github.com/coolcooldool/tencent-weibo-exporter/issues/1)，想直接用控制台执行可使用version15及以后的版本。
+
+*※目前已不推荐使用version15之前的版本*
+
 
 运行后会在当前目录下生成Word文件，在当前目录下的 pic 文件夹下下载微博内的图片。目前每20页生成一个Word文件，可以代码内自行修改。
 
@@ -155,6 +166,11 @@ version1:
     保存纯文本内容
 
 ##### common version
+
+version15:
+
+    修改运行环境为Python3.x
+    以对应控制台执行时中文LOG乱码导致异常结束
 
 version14:
 
