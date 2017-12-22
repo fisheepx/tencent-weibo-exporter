@@ -55,7 +55,8 @@ class tencent_weibo:
         if self.page_index == 1:
             self.browser.set_page_load_timeout(5)
             try:
-                self.browser.get('http://t.qq.com/coolcooldool/mine')
+                current_url = self.browser.current_url
+                self.browser.get(current_url + '/mine')
                 print '打开我的广播...'
             except:
                 print '打开我的广播超时...'
