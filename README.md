@@ -27,9 +27,9 @@ tencent-weibo-exporter
 
 Requirements
 ------------
-Python 2.x(version14以前)
+Python 2.x(version14之前,loginver5之前)
 
-Python 3.x(version15开始)
+Python 3.x(version15开始,loginver6开始)
 
 Installation
 ------------
@@ -142,6 +142,11 @@ Enjoy it!
 Change Log
 ----------
 ##### login version
+
+version6:
+
+    修改运行环境为Python3.x
+    以对应控制台执行时中文LOG乱码导致异常结束
 
 version5:
 
