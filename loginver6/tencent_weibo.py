@@ -21,7 +21,6 @@ Created on 2017/12/22
 '''
 from time import sleep
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from docx import Document
 import tencent_util
 
