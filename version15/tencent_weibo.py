@@ -149,7 +149,8 @@ class tencent_weibo:
             time.sleep(1)
         else:
             self.page_index -= 1
-            self.document.save('tencent_weibo_' + str(self.page_index // tencent_weibo.SAVE_FILE_PAGE + 1) + '_' + str(self.page_index) + '.docx')
+            self.document.save('tencent_weibo_' + str(self.page_index // tencent_weibo.SAVE_FILE_PAGE * tencent_weibo.SAVE_FILE_PAGE + 1) 
+                               + '_' + str(self.page_index) + '.docx')
             print('腾讯微博分析完成，共计　%s 页。' % self.page_index)
             print('备份了其中的第  %s 页到第　%s 页。' % (tencent_weibo.START_PAGE_INDEX,
                                              (tencent_weibo.END_PAGE_INDEX, self.page_index)[tencent_weibo.END_PAGE_INDEX > self.page_index]))
